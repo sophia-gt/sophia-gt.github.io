@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth focus:scroll-auto">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,43 +8,93 @@
     <link rel="icon" type="image/x-icon" href="/img/mariposa.png">
     <link href="/src/output.css" rel="stylesheet">
 </head>
-<body>
-    <header class="flex justify-center items-center flex-col md:flex-row bg-violet-50 p-10 h-screen overflow-auto">
+<body class="snap-y">
+    <header class="flex justify-center items-center flex-col md:flex-row bg-violet-50 p-10 h-screen overflow-auto z-50">
         <div class="w-10/12 md:w-1/2 h-fit mx-auto">
             <img src="/img/logo.png" alt="logo Sophía" class="md:mb-40">
         </div>
-        <div class="w-10/12 md:w-1/3 h-full py-auto flex flex-col justify-center items-center"> 
-            <div class="py-5 px-10 my-5 w-3/4 text-violet-500 text-3xl bg-violet-100 rounded-full flex justify-center">
-                <a href="#accesorios">Accesorios</a>
-            </div>
-            <div class="py-5 px-10 my-5 w-3/4 text-violet-500 text-3xl bg-violet-100 rounded-full flex justify-center">
-                <a href="#galeria">Galería</a>
-            </div>
-            <div class="py-5 px-10 my-5 w-3/4 text-violet-500 text-3xl bg-violet-100 rounded-full flex justify-center">
-                <a href="#contacto">Contacto</a>
-            </div>
-        </div>
+        <nav class="w-10/12 md:w-1/3 h-full py-auto flex flex-col justify-center items-center"> 
+            <a href="#accesorios" class="py-5 px-10 my-5 w-3/4 text-violet-500 text-3xl bg-violet-100 hover:text-violet-600 hover:bg-violet-200 rounded-full flex justify-center">
+                <div>Accesorios</div>
+            </a>
+            <a href="#galeria" class="py-5 px-10 my-5 w-3/4 text-violet-500 text-3xl bg-violet-100 hover:text-violet-600 hover:bg-violet-200 rounded-full flex justify-center">
+                <div>Galería</div>
+            </a>
+            <a href="#contacto" class="py-5 px-10 my-5 w-3/4 text-violet-500 text-3xl bg-violet-100 hover:text-violet-600 hover:bg-violet-200 rounded-full flex justify-center">
+                <div>Contacto</div>
+            </a>
+            
+        </nav>
     </header>
 
-    <main>
-        <section class="bg-blue-50 rounded-lg shadow m-4">
+    <main class="relative">
+        <div class="bg-violet-200 p-1 rounded-full w-16 h-16 opacity-40 hover:opacity-70 left-[80vw] sticky top-[90vh]  z-40">
+            <a href="#" class="">
+                <img src="/img/up.svg" alt="ir al inicio">
+            </a>
+        </div>
+
+        <section class="bg-blue-50 rounded-lg shadow m-4 snap-y">
             <div  class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-                <a name="accesorios"></a>
-                <h2 class="text-3xl mb'5">ACCESORIOS</h2>
+                <a name="accesorios" class="scroll-m-10"></a>
+
+                <h2 class="text-3xl mb-5">ACCESORIOS</h2>
                 
-                <div class="flex">
-                    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img class="rounded-t-lg" src="/img/gal/pulsera.png " alt="" />
-                        </a>
+                <div class="flex flex-wrap justify-center overflow-hidden gap-7">
+
+                    <div class="max-w-sm min-w-96 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <img class="rounded-t-lg" src="/img/gal/pulsera.png " alt="" />
                         <div class="p-5">
-                            <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Pulseras</h5>
-                            </a>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Pulseras</h5>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Diferentes diseños para los mejores gustos. Elaboradas con cuarzos naturales, cristales originales y perlas auténticas.</p>
                         </div>
                     </div>
+
+                    <div class="max-w-sm min-w-96 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <img class="rounded-t-lg" src="/img/gal/collar2.jpeg " alt="" />
+                        <div class="p-5">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Collares</h5>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Diferentes diseños para los mejores gustos. Elaboradas con cuarzos naturales, cristales originales y perlas auténticas.</p>
+                        </div>
+                    </div>
+
+                    <div class="max-w-sm min-w-96 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <img class="rounded-t-lg" src="/img/gal/pendientes.jpg " alt="" />
+                        <div class="p-5">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Pendientes</h5>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Diferentes diseños para los mejores gustos. Elaboradas con cuarzos naturales, cristales originales y perlas auténticas.</p>
+                        </div>
+                    </div>
+                    
                 </div>
+                
+                <h2 class="text-3xl my-10 mb-5">ACCESORIOS JUVENILES</h2>
+                
+                <div class="flex flex-wrap justify-center overflow-hidden gap-7">
+
+                    <div class="max-w-sm min-w-96 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <img class="rounded-t-lg" src="/img/gal/pulseraJuvenil.png " alt="" />
+                        <div class="p-5">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Pulseras</h5>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Diferentes diseños para los mejores gustos. Elaboradas con cuarzos naturales, cristales originales y perlas auténticas.</p>
+                        </div>
+                    </div>
+
+                    <div class="max-w-sm min-w-96 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <img class="rounded-t-lg" src="/img/gal/collarJuvenil.jpg " alt="" />
+                        <div class="p-5">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Collares</h5>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Diferentes diseños para los mejores gustos. Elaboradas con cuarzos naturales, cristales originales y perlas auténticas.</p>
+                        </div>
+                    </div>
+
+                    <div class="max-w-sm min-w-96 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <img class="rounded-t-lg" src="/img/gal/pendientesJuveniles.jpg " alt="" />
+                        <div class="p-5">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Pendientes</h5>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Diferentes diseños para los mejores gustos. Elaboradas con cuarzos naturales, cristales originales y perlas auténticas.</p>
+                        </div>
+                    </div>
 
                 
 
