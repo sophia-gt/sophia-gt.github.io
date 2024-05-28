@@ -671,6 +671,10 @@ video {
   top: 90vh;
 }
 
+.top-\[80vh\] {
+  top: 80vh;
+}
+
 .isolate {
   isolation: isolate;
 }
